@@ -18,8 +18,11 @@ pipeline
 		stage("Build") 
 		{
 			steps
-			{
+			{ 
+				sh '''
 				echo "Build Stage"
+				mvn clean package
+				'''
 			}
 		}
 		stage("Test") 

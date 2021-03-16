@@ -9,6 +9,10 @@ pipeline
 			steps
 			{
 				echo "SCM  Stage"
+				git branch: 'jenkins_job', 
+				changelog: false, 
+				credentialsId: 'pcfawsDevops', 
+				url: 'https://github.com/pcfawsDevops/aws.git'
 			}
 		}
 		stage("Build") 

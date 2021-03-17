@@ -1,6 +1,10 @@
 pipeline 
 {
 	agent any
+	tool 
+	{
+		maven 'JenkinsMaven'
+	}
 
 	stages 
 	{

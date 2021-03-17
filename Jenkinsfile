@@ -20,10 +20,9 @@ pipeline
 			steps
 
 			{ 
-				script{
 				echo "Build Stage"
 				mvn clean package
-				}
+				
 				
 			}
 		}

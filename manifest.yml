@@ -1,0 +1,4 @@
+applications:
+  - name: CloudSampleDeployApp
+    memory: 150MB
+    instance: 1

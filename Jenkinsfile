@@ -26,7 +26,7 @@ pipeline
 			{ 
 				sh ''' 
 				echo "Build Stage"
-				mvn -f ./demo/pom.xml clean package
+				mvn -f ./demo/pom.xml -B -DskipTests clean package
 				'''		
 				
 			}
